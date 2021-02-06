@@ -1,0 +1,50 @@
+section.gamesoptions .card-content{
+   display: flex;
+   justify-content: center;
+}
+
+section.gamesoptions .card-content .item > div{
+   text-align: center;
+   margin-bottom: 16px;
+}
+
+section.gamesoptions .card-content .item .input {
+   display: flex;
+   position: relative;
+}
+
+
+section.gamesoptions .card-content .item .input input[type='radio']{
+   position: absolute;
+   visibility: hidden;
+}
+
+section.gamesoptions .card-content .item .input span {
+   display:flex;
+   width: 105px;
+   height: 24px;
+   box-shadow: 0 2px 3px 2px rgba(0,0,0,0.4);
+   cursor: pointer;
+}
+
+section.gamesoptions .card-content .item .input span + span {
+   margin-left: 12px;
+}
+
+section.gamesoptions .card-content .item .input label{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   height: 100%;
+   width: 100%;
+}
+
+
+section.gamesoptions .card-content .item .input span input[type='radio']:checked + label{
+   background: black;
+   color: white;
+}
+
+
+

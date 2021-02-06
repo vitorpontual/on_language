@@ -1,0 +1,31 @@
+{% extends 'layout.njk'%}
+{% import 'parts/card.njk' as card%}
+
+{% block content %}
+   {% call card.render('Select Game Option', 'gamesoptions container form')%}
+      <form action="/gamesoptions" method='GET'>
+	 <div class="item">
+	    <div>Games Options</div>
+	    <div class='input'>
+	       <span onclick='check("Hangman")'>
+		  <input id="Hangman" type="radio" name="gamesoptions" value="H">
+		  <label for="Hangman">Hangman</label>
+	       </span>
+	       <span onclick="check('Memory')">
+		  <input type="radio" id="Memory" name="gamesoptions" value="M">
+		  <label for="Memory">Memory</label>
+	       </span>
+	       <span onclick="check('Form')">
+		  <input type="radio" id='Form' name="gamesoptions" value="F">
+		  <label for="Form">Form Words</label>
+	       </span>
+	    </div>
+	 </div>
+
+      </form>
+
+
+
+   {%endcall%}
+   
+{% endblock content%}

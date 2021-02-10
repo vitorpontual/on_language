@@ -11,6 +11,8 @@ section.gamesoptions .card-content .item > div{
 section.gamesoptions .card-content .item .input {
    display: flex;
    position: relative;
+   justify-content: center;
+   align-items: center;
 }
 
 
@@ -40,11 +42,29 @@ section.gamesoptions .card-content .item .input label{
    width: 100%;
 }
 
+section.gamesoptions .card-content .item .input label:hover{
+   background: gray;
+   color: white
+}
+
 
 section.gamesoptions .card-content .item .input span input[type='radio']:checked + label{
    background: black;
    color: white;
 }
 
+/* LEVEL GRID*/
+section.gamesoptions .card-content .item .language,
+section.gamesoptions .card-content .item .level {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
 
+}
+
+section.gamesoptions .card-content .item .input.language span,
+section.gamesoptions .card-content .item .input.level span{
+   justify-self: center;
+   margin: 0;
+   margin-bottom: 8px;
+}
 

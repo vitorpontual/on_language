@@ -22,6 +22,27 @@
 	    </div>
 	 </div>
 
+	 <div class="item">
+	    <div>Select Language</div>
+	    <div class="input language">
+	       {%for language in languages%}
+
+		  <span onclick='check("{{language.region}}")'><input type="radio" id="{{language.region}}" name="languageoption"><label for="{{language.region}}">{{language.name}}</label></span>
+
+	       {% endfor%}
+	    </div>
+	 </div>
+	 <div class="item">
+	    <div>Select Level</div>
+	    <div class="input level">
+	       {%for nivel in level %}
+
+		  <span onclick='check("{{nivel.level}}")'><input type="radio" id="{{nivel.level}}" name="languageoption"><label for="{{nivel.level}}">{{nivel.level}}</label></span>
+
+	       {% endfor%}
+	    </div>
+	 </div>
+
       </form>
 
 
